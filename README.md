@@ -17,4 +17,4 @@ If you have ideas, suggestions, or improvements, feel free to contribute. While 
 Before making any pull requests or issues, please familiarize yourself with any contribution guidelines if available.
 
 ## License
-BG-Analyzer is open source and licensed under the MIT License. For full details, please see the [LICENSE.md](LICENSE.md) file.
+BG-Analyzer is open source and licensed under the MIT License. For full details, please see the [LICENSE](LICENSE) file.
