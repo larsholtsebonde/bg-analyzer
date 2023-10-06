@@ -1,4 +1,4 @@
-# bg-analyzer
+# BG Analyzer
 
 ## Overview
 BG-Analyzer is a side project born out of my recent Type 1 diabetes diagnosis. Its aim is to provide data-driven insights into Insulin-to-Carbohydrate Ratios (ICR) and Insulin Correction Factors (ICF) by leveraging dynamic data analysis.
