@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Iterable, List
+from typing import List
 
 import pandas as pd
 
@@ -17,10 +17,16 @@ class CleanEvent:
     post_bg_mmol: float
 
 
-def _bg_stable(glucose: pd.DataFrame, time: pd.Timestamp, window: pd.Timedelta = pd.Timedelta("30min"), threshold: float = 1.0) -> bool:
+def _bg_stable(
+    glucose: pd.DataFrame,
+    time: pd.Timestamp,
+    window: pd.Timedelta = pd.Timedelta("30min"),
+    threshold: float = 1.0,
+) -> bool:
     """Return True if BG is stable in the window before ``time``."""
     start = time - window
-    segment = glucose[(glucose["timestamp"] >= start) & (glucose["timestamp"] <= time)]
+    mask = (glucose["timestamp"] >= start) & (glucose["timestamp"] <= time)
+    segment = glucose[mask]
     if segment.empty:
         return False
     return segment["bg_mmol"].max() - segment["bg_mmol"].min() <= threshold
@@ -70,7 +76,8 @@ def find_clean_events(
         pre_bg = glucose[glucose["timestamp"] <= meal_time].tail(1)
         if pre_bg.empty:
             continue
-        post_bg = glucose[glucose["timestamp"] >= meal_time + post_window].head(1)
+        post_mask = glucose["timestamp"] >= meal_time + post_window
+        post_bg = glucose[post_mask].head(1)
         if post_bg.empty:
             continue
 
