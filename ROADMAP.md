@@ -25,10 +25,6 @@
 
 ## ⏳ Backlog (not started)
 
-* [ ] **MVP‑04** `report`: include “events sampled / events skipped” stats block
-  *Enhances transparency.*
-  *Details*: add section in Markdown and JSON summarising number of candidate events versus discarded ones.
-  *Acceptance*: stats appear in both output formats; tests verify counts; README updated.
 * [ ] **INT‑01** `ingest`: Dexcom real‑time API connector
   Link to Issue #12.
   *Details*: pull glucose readings via Dexcom OAuth API and store tokens locally.
@@ -68,6 +64,7 @@
 * [x] **SCF‑00** repo skeleton, `cli.py`, poetry setup – merged #1
 * [x] **DOC‑01** initial `README.md` + `agents.md` – merged #2
 * [x] **MVP‑03** `analysis`: add overnight basal drift detector – merged #10
+* [x] **MVP‑04** `report`: include “events sampled / events skipped” stats block – merged #13
 
 ---
 
