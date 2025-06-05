@@ -3,8 +3,6 @@
 Add questions below as bullet points. The product owner should reply directly beneath each item.
 Once the information has been integrated into the repo (docs or code), remove the entry.
 
-- **Q:** What CSV column names do you expect for pump basal rate exports?
-  **A:** Start with assuming MDI. So bolus injections and one daily basal injection.
 - **Q:** For the Dexcom API connector, which OAuth grant flow and API scopes should we implement?
   **A:** _TBD_ On hold for now.
 - **Q:** Should Nightscout imports support both treatments and sensor glucose endpoints?
