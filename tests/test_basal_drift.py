@@ -31,3 +31,16 @@ def test_classify_drift_falling():
     df = _make_data([-2.5, -3.0, -2.0])
     entries = calculate_drift(df)
     assert classify_drift(entries) == "falling"
+
+
+def test_calculate_drift_values():
+    df = _make_data([1.0])
+    entries = calculate_drift(df)
+    assert len(entries) == 1
+    assert entries[0].delta_mmol == 1.0
+
+
+def test_classify_drift_insufficient():
+    df = _make_data([1.0, 1.0])
+    entries = calculate_drift(df)
+    assert classify_drift(entries, days=3) == "insufficient-data"
