@@ -24,6 +24,7 @@ Welcome, autonomous agent!  This document explains the project layout, coding co
 
 1. **Sync and plan**
    *Read open issues or create one describing the change.*  Reference it in your PR.
+   If anything is unclear, add a bullet to `QUESTIONS.md` so the product owner can respond.
 2. **Create a feature branch**
    `feature/<short‑slug>` or `fix/<short‑slug>`.
 3. **Write the code**
@@ -37,6 +38,7 @@ Welcome, autonomous agent!  This document explains the project layout, coding co
    * If UX or CLI changes, update `README.md`.
    * If developer‑facing behaviour changes, update `agents.md` or create a doc under `/docs/`.
    * Refresh examples in `/samples/` if data format changes.
+   * When a question in `QUESTIONS.md` is answered, reflect it in the docs and remove that bullet.
 5. **Validate**
 
    * Run `pre‑commit run --all-files` (black, isort, flake8, mypy, etc.).

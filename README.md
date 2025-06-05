@@ -91,12 +91,21 @@ All heavy computation runs **locally**; nothing is sent to external servers unle
 1. **Open an issue** to discuss ideas or bugs.
 2. **Fork & PR** – follow the conventional‑commits style for concise commit messages.
 3. **Pre‑commit hooks** run formatting & tests (`pre‑commit install`).
+4. **Need clarification?** Add a bullet to `QUESTIONS.md` so the product owner can respond.
 
 If you live with T1D, your real‑world feedback is invaluable—please share how the tool could fit (or already fits) into your routine.
 
 ### Code of Conduct
 
 We follow the [Contributor Covenant](CODE_OF_CONDUCT.md) to ensure an inclusive, respectful space.
+
+### Clarifications workflow
+
+If a developer (human or AI) needs more detail from the product owner:
+
+1. Add a bullet point question to `QUESTIONS.md`.
+2. The product owner replies beneath the question.
+3. Once the answer has been incorporated into docs or code, remove the entry from `QUESTIONS.md`.
 
 ---
 
