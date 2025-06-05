@@ -25,11 +25,6 @@
 
 ## ⏳ Backlog (not started)
 
-* [ ] **MVP‑03** `analysis`: add overnight basal drift detector
-  *Helps flag basal mis‑settings before bolus advice.*
-  *Docs*: update `README (Capabilities)` once merged.
-  *Details*: analyse BG trends between 00:00–05:00 to highlight rising or falling patterns.
-  *Acceptance*: unit tests cover typical, high and low drift scenarios; report lists nights with detected drift; docs describe usage.
 * [ ] **MVP‑04** `report`: include “events sampled / events skipped” stats block
   *Enhances transparency.*
   *Details*: add section in Markdown and JSON summarising number of candidate events versus discarded ones.
@@ -72,6 +67,7 @@
 
 * [x] **SCF‑00** repo skeleton, `cli.py`, poetry setup – merged #1
 * [x] **DOC‑01** initial `README.md` + `agents.md` – merged #2
+* [x] **MVP‑03** `analysis`: add overnight basal drift detector – merged #10
 
 ---
 
