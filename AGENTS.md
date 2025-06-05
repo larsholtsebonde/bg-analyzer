@@ -53,6 +53,7 @@ Welcome, autonomous agent!  This document explains the project layout, coding co
    * Title = concise, imperative.
    * Body = *What + Why + How*, link the issue.
    * Checklist ticked (tests, docs, coverage).
+   * Update `ROADMAP.md` task status in the same PR (move card or tick box).
    * Tag `@maintainers` for review.
 
 ---

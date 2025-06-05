@@ -8,6 +8,7 @@
 > * Keep descriptions short; link to an Issue/PR for details.
 > * When a task alters user‑visible behaviour or CLI flags, **update the docs** (`README.md`, `agents.md`, samples) in the same PR.
 > * Add yourself as owner with `@handle` so everyone knows who’s on it.
+> * **Always update the task card's status in the same PR**—move it or tick the box so the board stays current.
 
 ---
 
