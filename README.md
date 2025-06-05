@@ -58,6 +58,11 @@ $ open reports/latest_report.md          # or view JSON in reports/latest_report
 
 Blood glucose values are expressed in **mmol/L**.
 
+BG Analyzer currently assumes **multiple daily injection (MDI)** therapy.
+The `insulin.csv` file should therefore contain bolus injections
+(meal or correction) and a single basal injection entry per day.
+Continuous pump basal rate exports are not yet supported.
+
 (See [`/samples`](./samples) for example data.)
 
 ---
