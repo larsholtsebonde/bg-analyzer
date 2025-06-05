@@ -93,7 +93,8 @@ All heavy computation runs **locally**; nothing is sent to external servers unle
 1. **Open an issue** to discuss ideas or bugs.
 2. **Fork & PR** – follow the conventional‑commits style for concise commit messages.
 3. **Pre‑commit hooks** run formatting & tests (`pre‑commit install`).
-4. **Need clarification?** Add a bullet to `QUESTIONS.md` so the product owner can respond.
+4. **Update `ROADMAP.md`** – move your task card or tick its checkbox in the same PR so everyone sees current status.
+5. **Need clarification?** Add a bullet to `QUESTIONS.md` so the product owner can respond.
 
 If you live with T1D, your real‑world feedback is invaluable—please share how the tool could fit (or already fits) into your routine.
 
