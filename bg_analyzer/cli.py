@@ -7,7 +7,11 @@ import sys
 
 import click
 
-from .ingest import load_csv
+if __package__ in {None, "__main__", ""}:
+    # Ensure package imports work when running as a script
+    sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+
+from bg_analyzer.ingest import load_csv
 
 
 @click.command()
