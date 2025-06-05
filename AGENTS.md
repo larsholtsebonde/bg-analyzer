@@ -33,6 +33,7 @@ Welcome, autonomous agent!  This document explains the project layout, coding co
    * Add/modify docstrings in *Google‑style* format.
    * Maintain type hints (`mypy` passes).
    * Keep functions <50 LOC where feasible.
+   * **New features must include tests that verify the implementation works as intended.**
 4. **Update documentation**
 
    * If UX or CLI changes, update `README.md`.
