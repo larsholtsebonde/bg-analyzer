@@ -20,7 +20,7 @@ BG Analyzer analyses **your** data continuously and highlights when a ratio no 
 * 📊 **Event filtering engine** – Finds “clean” meal or correction events (single bolus, stable BG beforehand) suitable for ratio calculation.
 * 🧮 **ICR / ICF estimator** – Calculates observed carb‑coverage and correction sensitivity and compares them to your current settings.
 * 🌙 **Overnight basal drift detector** – Highlights rising or falling BG patterns between midnight and 5 am.
-* 📝 **Markdown & JSON reports** – Summaries are saved to `reports/` so humans *and* AIs can read them.
+* 📝 **Markdown & JSON reports** – Summaries are saved to `reports/` and now include how many events were analysed versus skipped.
 
 > *Disclaimer – BG Analyzer is **decision‑support only**. It does **not** automatically dose insulin and is **not** a regulated medical device. Always confirm changes with a healthcare professional.*
 
@@ -47,6 +47,7 @@ $ python -m bg_analyzer --glucose data/glucose.csv \
 
 # 4. Open the report
 $ open reports/latest_report.md          # or view JSON in reports/latest_report.json
+# The "Event Stats" section lists how many entries were used and skipped.
 ```
 
 ### Expected CSV columns
