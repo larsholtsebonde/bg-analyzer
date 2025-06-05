@@ -52,9 +52,11 @@ $ open reports/latest_report.md          # or view JSON in reports/latest_report
 
 | File           | Required Columns                     |
 | -------------- | ------------------------------------ |
-| `glucose.csv`  | `timestamp, bg_mgdl`                 |
+| `glucose.csv`  | `timestamp, bg_mmol`                 |
 | `insulin.csv`  | `timestamp, bolus_units, bolus_type` |
 | `carb_log.csv` | `timestamp, carbs_grams, meal_label` |
+
+Blood glucose values are expressed in **mmol/L**.
 
 (See [`/samples`](./samples) for example data.)
 
