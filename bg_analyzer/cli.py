@@ -7,6 +7,12 @@ import sys
 
 import click
 
+if __package__ in {None, "__main__", ""}:
+    # Ensure package imports work when running as a script
+    sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent))
+
+from bg_analyzer.ingest import load_csv
+
 
 @click.command()
 @click.option(
@@ -31,16 +37,18 @@ def main(
 ) -> None:
     """Run analysis on provided CSV files.
 
-    This placeholder prints the file paths and exits. Actual
-    analysis will be implemented later.
+    The parser currently validates the expected columns only.
     """
 
     click.echo("BG Analyzer skeleton")
     if glucose:
+        load_csv(glucose, ["timestamp", "bg_mmol"])
         click.echo(f"Glucose file: {glucose}")
     if insulin:
+        load_csv(insulin, ["timestamp", "bolus_units", "bolus_type"])
         click.echo(f"Insulin file: {insulin}")
     if carbs:
+        load_csv(carbs, ["timestamp", "carbs_grams", "meal_label"])
         click.echo(f"Carb file: {carbs}")
 
     sys.exit(0)
